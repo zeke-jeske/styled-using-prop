@@ -4,7 +4,7 @@
   "private": false,
   "license": "MIT",
   "files": [
-    "index.js"
+    "dist"
   ],
   "scripts": {
     "build": "yarn clean && tsc --build --verbose",
