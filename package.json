@@ -28,6 +28,7 @@
     "dist/index.d.ts",
     "dist/index.d.ts.map"
   ],
+  "main": "dist/index.js",
   "scripts": {
     "build": "yarn clean && tsc --build --verbose",
     "clean": "rm -rf dist"
