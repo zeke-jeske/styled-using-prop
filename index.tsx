@@ -13,7 +13,7 @@ type IntermediateProps<P> = P & {
 }
 
 /**
- * The props type for the components that are passed to and returned by styledWithProp.
+ * The props type for the components that are passed to and returned by styledUsingProp.
  */
 type PassedProps<BaseProps, T extends string> = BaseProps & {
   className?: string
@@ -79,7 +79,7 @@ function reverseClassNameTranslation<T extends string, P>(
  * @param Component the component to style
  * @param prop the name of the property to use instead of `className`
  */
-export default function styledWithProp<P, T extends string>(
+export default function styledUsingProp<P, T extends string>(
   Component: React.ComponentType<PassedProps<P, T>>,
   prop: T
 ): (

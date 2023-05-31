@@ -50,7 +50,7 @@ function reverseClassNameTranslation(Component, prop) {
  * @param Component the component to style
  * @param prop the name of the property to use instead of `className`
  */
-function styledWithProp(Component, prop) {
+function styledUsingProp(Component, prop) {
     return (...templateParams) => reverseClassNameTranslation((0, styled_components_1.default)(classNameTranslation(Component, prop))(...templateParams), prop);
 }
-exports.default = styledWithProp;
+exports.default = styledUsingProp;

@@ -1,5 +1,5 @@
 {
-  "name": "styled-with-prop",
+  "name": "styled-using-prop",
   "description": "A extension to styled-components that allows you to style components using props other than className.",
   "version": "0.1.1",
   "author": {
@@ -9,12 +9,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zeke-jeske/styled-with-prop.git"
+    "url": "git+https://github.com/zeke-jeske/styled-using-prop.git"
   },
   "bugs": {
-    "url": "https://github.com/zeke-jeske/styled-with-prop/issues"
+    "url": "https://github.com/zeke-jeske/styled-using-prop/issues"
   },
-  "homepage": "https://github.com/zeke-jeske/styled-with-prop#readme",
+  "homepage": "https://github.com/zeke-jeske/styled-using-prop#readme",
   "keywords": [
     "styled-components",
     "react",
@@ -24,7 +24,9 @@
     "styling"
   ],
   "files": [
-    "dist"
+    "dist/index.js",
+    "dist/index.d.ts",
+    "dist/index.d.ts.map"
   ],
   "scripts": {
     "build": "yarn clean && tsc --build --verbose",

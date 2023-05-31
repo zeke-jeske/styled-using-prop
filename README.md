@@ -1,4 +1,4 @@
-# styled-with-prop
+# styled-using-prop
 
 This package provides a lightweight function that allows you to use
 [`styled-components`](https://styled-components.com/) to style a React component that uses
@@ -12,18 +12,18 @@ issue](https://github.com/styled-components/styled-components/issues/3179).
 ## Usage
 
 ```typescript
-import styledWithProp from 'styled-with-prop'
+import styledUsingProp from 'styled-using-prop'
 import styled from 'styled-components'
 import SomeComponent from 'components/SomeComponent.tsx'
 
-const TheStyledComponent = styledWithProp(SomeComponent, 'portalClassName')`
+const TheStyledComponent = styledUsingProp(SomeComponent, 'portalClassName')`
   margin-top: 1rem;
   border: 5px solid red;
 `
 
 // If you need to pass styles with multiple className properties, simply chain the tag template functions:
 
-const WithMultipleStyles = styledWithProp(styledWithProp(styled(SomeComponent)`
+const WithMultipleStyles = styledUsingProp(styledUsingProp(styled(SomeComponent)`
   /* These styles are passed through className */
   margin-top: 1rem;
 

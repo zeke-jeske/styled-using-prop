@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 /**
- * The props type for the components that are passed to and returned by styledWithProp.
+ * The props type for the components that are passed to and returned by styledUsingProp.
  */
 type PassedProps<BaseProps, T extends string> = BaseProps & {
     className?: string;
@@ -15,6 +15,6 @@ type PassedProps<BaseProps, T extends string> = BaseProps & {
  * @param Component the component to style
  * @param prop the name of the property to use instead of `className`
  */
-export default function styledWithProp<P, T extends string>(Component: React.ComponentType<PassedProps<P, T>>, prop: T): (...templateParams: Parameters<typeof styled.div>) => React.ComponentType<PassedProps<P, T>>;
+export default function styledUsingProp<P, T extends string>(Component: React.ComponentType<PassedProps<P, T>>, prop: T): (...templateParams: Parameters<typeof styled.div>) => React.ComponentType<PassedProps<P, T>>;
 export {};
 //# sourceMappingURL=index.d.ts.map
