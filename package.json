@@ -1,7 +1,7 @@
 {
   "name": "styled-using-prop",
   "description": "A extension to styled-components that allows you to style components using props other than className.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": {
     "name": "Zeke Jeske"
   },
